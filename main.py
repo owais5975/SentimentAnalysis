@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from sentimentModel import analyze_sentiment
-import os
-from dotenv import load_dotenv
-load_dotenv()
-baseURL = os.environ.get("BASE_URL")
+# import os
+# from dotenv import load_dotenv
+# load_dotenv()
+# baseURL = os.environ.get("BASE_URL")
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -23,7 +23,7 @@ app.add_middleware(
 def root():
     return {"Message": "I'm alive"}
 
-@app.get(F"{baseURL}/sentiment")
+@app.get("/api/v1/sentiment")
 def sentiment(message: str):
     s = analyze_sentiment(message)
     return {"Sentiment": s}
