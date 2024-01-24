@@ -1,6 +1,4 @@
-fastapi
-fastapi-cors
-uvicorn
-nltk
-nltk.sentiment
-nltk.sentiment
+fastapi==0.68.0
+fastapi-cors==0.7.0
+uvicorn==0.15.0
+nltk==3.6.3
