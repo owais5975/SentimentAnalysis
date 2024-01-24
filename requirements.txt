@@ -1,0 +1,6 @@
+fastapi
+fastapi-cors
+uvicorn
+nltk
+nltk.sentiment
+nltk.sentiment
