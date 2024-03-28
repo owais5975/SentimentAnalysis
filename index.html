@@ -29,6 +29,8 @@
                 .then(res => res.json())
                 .then(json => {
                     console.log("new pr")
+
+                    console.log("testing")
                     $("#result").text(json.Sentiment)
                 })
         }
